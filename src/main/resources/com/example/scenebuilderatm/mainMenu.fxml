@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="381.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilderatm.Controller">
+   <children>
+      <VBox alignment="CENTER" style="-fx-background-color: gray;">
+         <children>
+            <Label alignment="CENTER" text="AtmApp" textAlignment="CENTER" textFill="#c9a515">
+               <font>
+                  <Font name="Andale Mono" size="28.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="56.0">
+                     <image>
+                        <Image url="@atm.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="336.0" prefWidth="503.0" spacing="5.0">
+         <children>
+            <Button fx:id="checkBalanceBtn" alignment="CENTER" lineSpacing="2.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#checkBalanceBtnClicked" prefWidth="200.0" text="Check Balance" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Apple Symbols" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="withdrawBtn" alignment="CENTER" lineSpacing="2.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#withdrawBtnClicked" prefWidth="200.0" text="Withdraw" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Apple Symbols" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="depositBtn" alignment="CENTER" lineSpacing="2.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#depositBtnClicked" prefWidth="200.0" text="Deposit" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Apple Symbols" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" alignment="CENTER" lineSpacing="2.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exitBtnClicked" prefWidth="200.0" text="Exit" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Apple Symbols" size="18.0" />
+               </font>
+            </Button>
+         </children></VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="scene2PrompLbl" alignment="CENTER" lineSpacing="2.0" text="Welcome, click one of the buttons." textFill="#31d331" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Apple Color Emoji" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</VBox>
